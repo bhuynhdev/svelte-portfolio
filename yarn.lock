@@ -117,6 +117,15 @@
     set-cookie-parser "^2.4.8"
     tiny-glob "^0.2.9"
 
+"@sveltejs/adapter-netlify@^1.0.0-next.77":
+  version "1.0.0-next.77"
+  resolved "https://registry.yarnpkg.com/@sveltejs/adapter-netlify/-/adapter-netlify-1.0.0-next.77.tgz#1da801c12505dd7d09da5ef8c2a9d5700e1a1a33"
+  integrity sha512-g4+i8xQROxw4Olt5T0bJAj3qCDuluQ/JnvzqajEz620COuIddpa2B1xK5DmbAhxQox823jLNTxg7LOEpBqD3bw==
+  dependencies:
+    "@iarna/toml" "^2.2.5"
+    esbuild "^0.15.6"
+    set-cookie-parser "^2.4.8"
+
 "@sveltejs/adapter-vercel@1.0.0-next.73":
   version "1.0.0-next.73"
   resolved "https://registry.yarnpkg.com/@sveltejs/adapter-vercel/-/adapter-vercel-1.0.0-next.73.tgz#cb285b4b8adf1f9b1cc3d7df49cc8e201a563fad"
