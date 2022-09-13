@@ -4,6 +4,8 @@
 </script>
 
 <svelte:head>
+	<meta name="description" content="Bao Huynh's portfolio" />
+	<title>Bao Huynh portfolio</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
 	<link
