@@ -2,7 +2,7 @@
 	<div class="text">
 		<div class="intro">
 			<h1>
-				Hi, I'm Bao Huynh, <br class="break" />
+				Hi, I'm Bao Huynh, <br class="headline-break" />
 				a <span class="highlight">Full-stack developer</span>.
 			</h1>
 			<p class="description">
@@ -17,12 +17,17 @@
 	</div>
 	<div class="image">
 		<img src="/undraw_code_thinking_re_gka2.svg" alt="" class="illustration" />
+		<img src="/plus-accent.svg" alt="plus signs" class="accent plus-accent" />
+		<img src="/curly-accent.svg" alt="plus signs" class="accent curly-accent" />
+		<img src="/diamond-dot-accent.svg" alt="plus signs" class="accent diamond-accent" />
+		<div class="accent cube-accent css">CSS</div>
+		<div class="accent cube-accent js">JS</div>
 	</div>
 </section>
 
 <style lang="scss">
-	.break,
-	.illustration {
+	.headline-break,
+	.image {
 		display: none;
 	}
 
@@ -49,7 +54,7 @@
 		background-image: linear-gradient(to right, transparent 50%, black 50%);
 		background-size: 200%;
 		animation: expand 600ms ease-out forwards;
-		animation-delay: 200ms;
+		animation-delay: 400ms;
 
 		@keyframes expand {
 			from {
@@ -90,25 +95,20 @@
 			transition: transform 200ms ease;
 		}
 		.cta a:hover {
-			transform: scale(1.1);
+			transform: scale(1.07);
 			text-decoration: underline;
 		}
 	}
 
 	@media screen and (min-width: 60em) {
-		.break {
-			display: inline;
-		}
-
-		.illustration {
-			display: block;
-			max-height: 800px;
-		}
-
 		section {
 			display: grid;
 			grid-template-columns: 1fr 47%;
-			place-items: center;
+			align-items: center;
+			justify-content: space-between;
+			.headline-break {
+				display: inline;
+			}
 			.description {
 				width: 90%;
 			}
@@ -118,6 +118,101 @@
 			flex-direction: row;
 			justify-content: flex-start;
 			gap: 2.5em;
+		}
+
+		.image {
+			display: block;
+			position: relative;
+
+			.accent {
+				position: absolute;
+			}
+			.illustration {
+				max-height: 800px;
+			}
+		}
+
+		.plus-accent {
+			z-index: -1;
+			width: 100px;
+			right: -16px;
+			bottom: -25px;
+		}
+
+		.curly-accent {
+			z-index: -1;
+			width: 60px;
+			right: 0px;
+			top: -40px;
+		}
+
+		.diamond-accent {
+			z-index: -1;
+			width: 4.5em;
+			left: 23%;
+			top: -50px;
+		}
+
+		.cube-accent {
+			--side-width: 6px;
+			font-weight: 650;
+			font-family: Poppins;
+			width: 55px;
+			height: 50px;
+			background-color: var(--front-color);
+			border-right: var(--side-width) solid var(--right-color);
+			border-top: var(--side-width) solid var(--top-color);
+			display: grid;
+			place-items: center;
+			animation: float 1.5s ease infinite alternate;
+
+			&:after {
+				content: '';
+				position: absolute;
+				inset: auto auto 100% 0; // left 0px bottom 100%
+				border: calc(var(--side-width) * 0.51) solid transparent;
+				border-left: calc(var(--side-width) * 0.51) solid white;
+				border-top: calc(var(--side-width) * 0.51) solid white;
+			}
+
+			&:before {
+				content: '';
+				position: absolute;
+				inset: auto auto 0 100%; // bottom 0 left 100%
+				border: calc(var(--side-width) * 0.51) solid transparent;
+				border-bottom: calc(var(--side-width) * 0.51) solid white;
+				border-right: calc(var(--side-width) * 0.51) solid white;
+			}
+
+			@keyframes float {
+				from {
+					transform: translateY(0);
+				}
+				to {
+					transform: translateY(15px);
+				}
+			}
+		}
+
+		.js {
+			width: 50px;
+			// background-image: url('/js_logo.png');
+			--front-color: hsl(54, 93%, 53%);
+			--right-color: hsl(54, 90%, 43%);
+			--top-color: hsl(54, 90%, 68%);
+			position: absolute;
+			top: calc(-50px - 1em);
+			left: 20%;
+			animation-delay: 0.5s;
+		}
+		.css {
+			// background-image: url('/css_logo.png');
+			--front-color: hsl(39, 90%, 58%);
+			--right-color: hsl(39, 90%, 48%);
+			--top-color: hsl(39, 90%, 68%);
+			position: absolute;
+			bottom: calc(-50px - 1em);
+			left: 80%;
 		}
 	}
 </style>
