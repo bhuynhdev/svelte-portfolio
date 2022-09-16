@@ -2,18 +2,40 @@
 	<div class="text">
 		<div class="intro">
 			<h1>
-				Hi, I'm Bao Huynh, <br class="headline-break" />
-				a <span class="highlight">Full-stack developer</span>.
+				Hi, I'm Bao Huynh,<br class="headline-break" /> a
+				<span class="highlight">Full-stack developer</span>.
 			</h1>
 			<p class="description">
-				I&apos;m a passionate software developer striving to make web applications that look great
-				and perform great using modern technologies.
+				I&apos;m a passionate software developer striving to make applications that look smooth and
+				perform great using modern technologies.
 			</p>
 		</div>
 		<div class="cta">
 			<a href="#projects" class="cta__main">See my works</a>
 			<a href="#contact" class="cta__sub">Contact me</a>
 		</div>
+		<ul class="socials">
+			<li>
+				<a href="https://github.com/bhuynhdev">
+					<img src="/icons/github.svg" alt="Github icon" width="32" />
+				</a>
+			</li>
+			<li>
+				<a href="https://linkedin.com/in/bhuynhuc">
+					<img src="/icons/linkedin.svg" alt="LinkedIn icon" width="32" />
+				</a>
+			</li>
+			<li>
+				<a href="https://twitter.com/bhuynhtweet">
+					<img src="/icons/twitter.svg" alt="Twitter icon" width="32" />
+				</a>
+			</li>
+			<li>
+				<a href="https://instagram.com">
+					<img src="/icons/instagram.svg" alt="Instagram icon" width="32" />
+				</a>
+			</li>
+		</ul>
 	</div>
 	<div class="image">
 		<img src="/undraw_code_thinking_re_gka2.svg" alt="" class="illustration" />
@@ -72,6 +94,7 @@
 		align-items: center;
 		justify-content: center;
 		gap: 1.5em;
+		font-size: 1.1em;
 		a {
 			width: 17ch;
 			text-align: center;
@@ -100,6 +123,14 @@
 		}
 	}
 
+	.socials {
+		display: flex;
+		margin-top: 2em;
+		gap: 2em;
+		justify-content: center;
+		align-items: center;
+	}
+
 	@media screen and (min-width: 60em) {
 		section {
 			display: grid;
@@ -118,6 +149,10 @@
 			flex-direction: row;
 			justify-content: flex-start;
 			gap: 2.5em;
+		}
+
+		.socials {
+			justify-content: flex-start;
 		}
 
 		.image {
