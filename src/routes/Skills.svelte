@@ -51,9 +51,10 @@
 	.content-wrapper {
 		width: 100%;
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		gap: 4em;
+		gap: 2em;
 		> * {
 			flex: 1;
 		}
@@ -83,6 +84,14 @@
 			&:hover {
 				transform: scale(1.15);
 			}
+		}
+	}
+
+	@media screen and (min-width: 60em) {
+		.content-wrapper {
+			flex-direction: row;
+			gap: 4em;
+			align-items: flex-start;
 		}
 	}
 </style>
