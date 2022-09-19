@@ -45,6 +45,9 @@
 		grid-template-columns: 1fr;
 		gap: 1.5em;
 		background-color: #f8f8f8;
+		h2 {
+			margin-bottom: 0;
+		}
 	}
 
 	.avatar img {
@@ -99,6 +102,7 @@
 		&:hover {
 			.download-text {
 				transform: translateX(-8%);
+				text-decoration: underline;
 			}
 			.arrow {
 				opacity: 1;

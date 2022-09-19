@@ -1,6 +1,6 @@
-<section>
+<section class="projects">
 	<h2>My Projects</h2>
-	<div class="projects">
+	<div class="project-list">
 		<div class="project-item">
 			<img src="/lego-g094009400.jpg" alt="Lego car" />
 			<div class="headline">
@@ -66,7 +66,10 @@
 
 <style lang="scss">
 	.projects {
-		margin-top: 3em;
+		background-color: #f8f8f8;
+	}
+
+	.project-list {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 		justify-content: center;
