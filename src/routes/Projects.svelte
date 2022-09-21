@@ -7,8 +7,9 @@
 				<h3 class="name">Robot simulation</h3>
 				<span class="separator">|</span>
 				<div class="links">
-					<a href="https://github.com"><i class="fa-brands fa-github" aria-label="Repository" /></a>
-					<a href="https://netlify.com"><i class="fa-solid fa-link" aria-label="Live site" /></a>
+					<a href="https://github.com/bhuynhdev/ENED-1120-Robotics-Proj5"
+						><i class="fa-brands fa-github" aria-label="Repository" /></a
+					>
 				</div>
 			</div>
 			<p>A warehouse robot program that scans barcode and picks packages autonomously</p>
@@ -28,8 +29,12 @@
 				<h3 class="name">Todo calendar</h3>
 				<span class="separator">|</span>
 				<div class="links">
-					<a href="https://github.com"><i class="fa-brands fa-github" aria-label="Repository" /></a>
-					<a href="https://netlify.com"><i class="fa-solid fa-link" aria-label="Live site" /></a>
+					<a href="https://github.com/bhuynhdev/Habitica-Calendia"
+						><i class="fa-brands fa-github" aria-label="Repository" /></a
+					>
+					<a href="http://timeblock-calendar.herokuapp.com/"
+						><i class="fa-solid fa-link" aria-label="Live site" /></a
+					>
 				</div>
 			</div>
 			<p>
@@ -49,7 +54,9 @@
 				<h3 class="name">Photomosaic maker</h3>
 				<span class="separator">|</span>
 				<div class="links">
-					<a href="https://github.com"><i class="fa-brands fa-github" aria-label="Repository" /></a>
+					<a href="https://github.com/bhuynhdev/photomosaics"
+						><i class="fa-brands fa-github" aria-label="Repository" /></a
+					>
 				</div>
 			</div>
 			<p>
