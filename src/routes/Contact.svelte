@@ -1,4 +1,4 @@
-<section class="contact">
+<section class="contact" id="contact">
 	<div class="text">
 		<header>
 			<h2 id="contact" class="title">Leave me a message</h2>
