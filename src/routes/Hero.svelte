@@ -31,7 +31,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="https://instagram.com" target="_blank" rel="noopener noreferer">
+				<a href="https://instagram.com/unflinch_camel" target="_blank" rel="noopener noreferer">
 					<i class="fa-brands fa-instagram" aria-label="Instagram" />
 				</a>
 			</li>

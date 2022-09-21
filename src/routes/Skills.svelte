@@ -2,7 +2,7 @@
 	import SkillIcon from '$lib/components/SkillIcon.svelte';
 </script>
 
-<section class="skills">
+<section class="skills" id="skills">
 	<h2>Skills</h2>
 	<div class="content-wrapper">
 		<div class="skill-category">

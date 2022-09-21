@@ -1,4 +1,4 @@
-<section class="about">
+<section class="about" id="about">
 	<!-- Show heading on top if on mobile, else show heading sideway -->
 	<h2 class="mobile-heading">About Me</h2>
 	<div class="avatar">
