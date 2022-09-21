@@ -16,23 +16,23 @@
 		</div>
 		<ul class="socials">
 			<li>
-				<a href="https://github.com/bhuynhdev">
-					<img src="/icons/github.svg" alt="Github icon" width="32" />
+				<a href="https://github.com/bhuynhdev" target="_blank" rel="noopener noreferer">
+					<i class="fa-brands fa-github" aria-label="Github" />
 				</a>
 			</li>
 			<li>
-				<a href="https://linkedin.com/in/bhuynhuc">
-					<img src="/icons/linkedin.svg" alt="LinkedIn icon" width="32" />
+				<a href="https://linkedin.com/in/bhuynhuc" target="_blank" rel="noopener noreferer">
+					<i class="fa-brands fa-linkedin" aria-label="Linkedin" />
 				</a>
 			</li>
 			<li>
-				<a href="https://twitter.com/bhuynhtweet">
-					<img src="/icons/twitter.svg" alt="Twitter icon" width="32" />
+				<a href="https://twitter.com/bhuynhtweet" target="_blank" rel="noopener noreferer">
+					<i class="fa-brands fa-twitter" aria-label="Twitter" />
 				</a>
 			</li>
 			<li>
-				<a href="https://instagram.com">
-					<img src="/icons/instagram.svg" alt="Instagram icon" width="32" />
+				<a href="https://instagram.com" target="_blank" rel="noopener noreferer">
+					<i class="fa-brands fa-instagram" aria-label="Instagram" />
 				</a>
 			</li>
 		</ul>
@@ -112,6 +112,14 @@
 		}
 	}
 
+	.socials {
+		display: flex;
+		gap: 1em;
+		font-size: 2.25em;
+		justify-content: center;
+		align-items: center;
+	}
+
 	@media (hover) {
 		.cta a {
 			transform: scale(1);
@@ -121,14 +129,6 @@
 			transform: scale(1.07);
 			text-decoration: underline;
 		}
-	}
-
-	.socials {
-		display: flex;
-		margin-top: 2em;
-		gap: 2em;
-		justify-content: center;
-		align-items: center;
 	}
 
 	@media screen and (min-width: 60em) {

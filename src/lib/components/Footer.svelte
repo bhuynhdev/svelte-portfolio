@@ -18,23 +18,23 @@
 	<div class="socials">
 		<ul>
 			<li>
-				<a href="https://github.com/bhuynhdev">
-					<img src="/icons/github.svg" alt="Github icon" width="32" />
+				<a href="https://github.com/bhuynhdev" target="_blank" rel="noopener noreferer">
+					<i class="fa-brands fa-github" aria-label="Github" />
 				</a>
 			</li>
 			<li>
-				<a href="https://linkedin.com/in/bhuynhuc">
-					<img src="/icons/linkedin.svg" alt="LinkedIn icon" width="32" />
+				<a href="https://linkedin.com/in/bhuynhuc" target="_blank" rel="noopener noreferer">
+					<i class="fa-brands fa-linkedin" aria-label="LinkedIn" />
 				</a>
 			</li>
 			<li>
-				<a href="https://twitter.com/bhuynhtweet">
-					<img src="/icons/twitter.svg" alt="Twitter icon" width="32" />
+				<a href="https://twitter.com/bhuynhtweet" target="_blank" rel="noopener noreferer">
+					<i class="fa-brands fa-twitter" aria-label="Twitter" />
 				</a>
 			</li>
 			<li>
-				<a href="https://instagram.com">
-					<img src="/icons/instagram.svg" alt="Instagram icon" width="32" />
+				<a href="https://instagram.com" target="_blank" rel="noopener noreferer">
+					<i class="fa-brands fa-instagram" aria-label="Instagram" />
 				</a>
 			</li>
 		</ul>
@@ -70,7 +70,9 @@
 		align-items: center;
 		ul {
 			display: flex;
-			gap: 2em;
+			font-size: 2em;
+			gap: 1em;
+			margin: 0.25em 0 0.5em 0;
 		}
 	}
 </style>
