@@ -10,6 +10,9 @@
 				<a href="#about">About me</a>
 			</li>
 			<li>
+				<a href="#experience">Experiences</a>
+			</li>
+			<li>
 				<a href="#projects">Projects</a>
 			</li>
 			<li>

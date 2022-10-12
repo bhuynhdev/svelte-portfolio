@@ -105,10 +105,7 @@
 	}
 
 	.timeline-item {
-		margin-top: 5px;
-		margin-left: 15px;
-		background-color: #efefef;
-		padding: 1em 1.5em;
+		margin-left: 20px;
 		border-radius: 10px;
 		position: relative;
 		&::before {
@@ -116,7 +113,7 @@
 			content: '';
 			position: absolute;
 			top: -10px;
-			left: -15px;
+			left: -20px;
 			transform: translate(-50%);
 			width: var(--dot-size);
 			height: var(--dot-size);
@@ -141,6 +138,8 @@
 		}
 
 		.timeline-item {
+			background-color: #efefef;
+			padding: 1em 1.5em;
 			--spacer: 30px; /* Space between text and timeline bar */
 			width: calc(50% - var(--spacer));
 			&:nth-child(odd) {
