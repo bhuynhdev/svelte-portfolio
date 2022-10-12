@@ -16,22 +16,22 @@
 		</div>
 		<ul class="socials">
 			<li>
-				<a href="https://github.com/bhuynhdev" target="_blank" rel="noopener noreferer">
+				<a href="https://github.com/bhuynhdev" target="_blank" rel="noopener noreferrer">
 					<i class="fa-brands fa-github" aria-label="Github" />
 				</a>
 			</li>
 			<li>
-				<a href="https://linkedin.com/in/bhuynhuc" target="_blank" rel="noopener noreferer">
+				<a href="https://linkedin.com/in/bhuynhuc" target="_blank" rel="noopener noreferrer">
 					<i class="fa-brands fa-linkedin" aria-label="Linkedin" />
 				</a>
 			</li>
 			<li>
-				<a href="https://twitter.com/bhuynhtweet" target="_blank" rel="noopener noreferer">
+				<a href="https://twitter.com/bhuynhtweet" target="_blank" rel="noopener noreferrer">
 					<i class="fa-brands fa-twitter" aria-label="Twitter" />
 				</a>
 			</li>
 			<li>
-				<a href="https://instagram.com/unflinch_camel" target="_blank" rel="noopener noreferer">
+				<a href="https://instagram.com/unflinch_camel" target="_blank" rel="noopener noreferrer">
 					<i class="fa-brands fa-instagram" aria-label="Instagram" />
 				</a>
 			</li>
