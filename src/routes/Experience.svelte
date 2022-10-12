@@ -26,6 +26,29 @@
 			]
 		}
 	];
+	const skillsToBold = [
+		'Typescript',
+		'NestJS',
+		'MongoDB',
+		'Jest',
+		'Flask',
+		'HTML',
+		'JSON',
+		'JavaScript'
+	];
+
+	const regExStr = skillsToBold.join('|');
+
+	// Add <strong> to skills using Regex
+	// Credit: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#specifying_a_string_as_the_replacement
+	experiences.forEach((experience) => {
+		experience.bullets.forEach((bulletPoint, i) => {
+			experience.bullets[i] = bulletPoint.replace(
+				new RegExp(regExStr, 'gmi'),
+				`<strong>$&</strong>`
+			);
+		});
+	});
 </script>
 
 <section class="experience" id="experience">
