@@ -6,16 +6,16 @@
 	</label>
 	<nav>
 		<ul>
-			<li>
+			<li class="nav-item">
 				<a href="#about">About me</a>
 			</li>
-			<li>
+			<li class="nav-item">
 				<a href="#experience">Experiences</a>
 			</li>
-			<li>
+			<li class="nav-item">
 				<a href="#projects">Projects</a>
 			</li>
-			<li>
+			<li class="nav-item">
 				<a href="#contact">Contact</a>
 			</li>
 		</ul>
@@ -139,6 +139,27 @@
 				align-items: center;
 				a {
 					opacity: 1;
+				}
+			}
+		}
+
+		@media (hover) {
+			.nav-item {
+				position: relative;
+				&::before {
+					content: '';
+					width: 50%;
+					height: 2.5px;
+					background-color: #0f0f0f;
+					position: absolute;
+					bottom: -3px;
+					left: 50%;
+					transform: translateX(-50%) scaleX(0%);
+					border-radius: 5px;
+					transition: transform 300ms ease;
+				}
+				&:hover::before {
+					transform: translateX(-50%) scaleX(100%);
 				}
 			}
 		}
