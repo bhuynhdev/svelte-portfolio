@@ -7,16 +7,16 @@
 	<nav>
 		<ul>
 			<li class="nav-item">
-				<a href="#about">About me</a>
+				<a href="/#about">About me</a>
 			</li>
 			<li class="nav-item">
-				<a href="#experience">Experiences</a>
+				<a href="/#experience">Experiences</a>
 			</li>
 			<li class="nav-item">
-				<a href="#projects">Projects</a>
+				<a href="/#projects">Projects</a>
 			</li>
 			<li class="nav-item">
-				<a href="#contact">Contact</a>
+				<a href="/#contact">Contact</a>
 			</li>
 		</ul>
 	</nav>

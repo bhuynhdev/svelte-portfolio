@@ -1,12 +1,16 @@
-<script>
+<script lang="ts">
+	import { page } from '$app/stores';
 	import Footer from '$lib/components/Footer.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import '$lib/styles/global.scss';
+
+	const { title } = $page.data; // title loaded from Markdown files
 </script>
 
 <svelte:head>
+	<title>{title || 'Bao Huynh portfolio'}</title>
 	<meta name="description" content="Bao Huynh's portfolio" />
-	<title>Bao Huynh portfolio</title>
+	<meta property="og:title" content={title} />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
 	<link
