@@ -3,19 +3,23 @@
 	export let data: MdPostLoadedData;
 </script>
 
-<article>
+<article class="markdown">
 	<h2>{data.title}</h2>
-	<p>Published: {data.date}</p>
+	<p class="date">{data.date}</p>
 	<svelte:component this={data.content} />
 </article>
 
 <style lang="scss">
 	article {
 		min-height: 100vh;
-		padding: 0 var(--space-x);
+		padding: 5em var(--space-x);
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: flex-start;
 		align-items: flex-start;
+	}
+
+	.date {
+		margin-bottom: 2em;
 	}
 </style>
