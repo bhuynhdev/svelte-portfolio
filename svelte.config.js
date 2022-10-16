@@ -1,6 +1,7 @@
 import adapter from '@sveltejs/adapter-netlify';
 import { mdsvex } from 'mdsvex';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+import rehypeExternalLinks from 'rehype-external-links';
 import rehypeSlug from 'rehype-slug';
 import preprocess from 'svelte-preprocess';
 
@@ -21,6 +22,14 @@ const rehypeAutoLinkHeadingsOptions = {
 	}
 };
 
+/** @type Parameters<typeof rehypeExternalLinks>[0] */
+const rehypeExternalLinksOptions = {
+	rel: ['noopener', 'noreferrer', 'nofollow'],
+	target: (element) => {
+		return element.properties.href.startsWith('http') ? '_blank' : undefined;
+	}
+};
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
@@ -29,7 +38,11 @@ const config = {
 		preprocess(),
 		mdsvex({
 			extensions: ['.mdx'],
-			rehypePlugins: [rehypeSlug, [rehypeAutolinkHeadings, rehypeAutoLinkHeadingsOptions]]
+			rehypePlugins: [
+				rehypeSlug,
+				[rehypeAutolinkHeadings, rehypeAutoLinkHeadingsOptions],
+				[rehypeExternalLinks, rehypeExternalLinksOptions]
+			]
 		})
 	],
 
@@ -37,8 +50,7 @@ const config = {
 
 	kit: {
 		adapter: adapter()
-	},
-
+	}
 };
 
 export default config;
