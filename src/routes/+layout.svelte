@@ -3,8 +3,9 @@
 	import Footer from '$lib/components/Footer.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import '$lib/styles/global.scss';
-
+	import { fade } from 'svelte/transition';
 	const { title } = $page.data; // title loaded from Markdown files
+	export let data: any;
 </script>
 
 <svelte:head>
@@ -21,7 +22,9 @@
 </svelte:head>
 
 <Header />
-<main>
-	<slot />
-</main>
+{#key data.currentRoute}
+	<main in:fade={{ duration: 150, delay: 150 }} out:fade={{ duration: 100 }}>
+		<slot />
+	</main>
+{/key}
 <Footer />
