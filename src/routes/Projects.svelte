@@ -100,9 +100,9 @@
 	.thumbnail {
 		margin-bottom: 15px;
 		position: relative;
-		width: 100%;
 		img {
 			border-radius: 5px;
+			width: 100%;
 			aspect-ratio: 4 / 3;
 			box-shadow: 2px 4px 5px rgba(0, 0, 0, 30%);
 			object-fit: cover;
