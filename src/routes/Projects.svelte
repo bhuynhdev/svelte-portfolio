@@ -19,7 +19,8 @@
 			},
 			github: 'https://github.com/bhuynhdev/Habitica-Calendia',
 			site: 'http://timeblock-calendar.herokuapp.com/',
-			skills: ['JavaScript', 'React', 'MongoDB', 'Express.js']
+			skills: ['JavaScript', 'React', 'MongoDB', 'Express.js'],
+			blogpost: 'project-todo-calendar'
 		},
 		{
 			name: 'Photomosaic maker',
@@ -65,8 +66,12 @@
 							<li class="pill">{skill}</li>
 						{/each}
 					</ul>
+					{#if project.blogpost}
+						<div class="read-more-wrapper">
+							<a href={`/blog/${project.blogpost}`} class="read-more">Read more</a>
+						</div>
+					{/if}
 				</div>
-				<a href="/blog/1" class="learn-more">Read more</a>
 			</div>
 		{/each}
 	</div>
@@ -104,22 +109,6 @@
 		}
 	}
 
-	.learn-more {
-		grid-area: 1 / 1 / 2 / 2;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		padding: 0.25em 0.75em;
-		border-radius: 2px;
-		border: 1px solid #f0f0f0;
-		background-color: transparent;
-		color: #f8f8f8;
-		opacity: 0;
-		cursor: pointer;
-		transition: opacity 200ms linear;
-	}
-
 	.headline {
 		display: flex;
 		flex-direction: row;
@@ -150,11 +139,49 @@
 		}
 	}
 
+	.read-more-wrapper {
+		display: grid;
+		place-items: center;
+	}
+
+	.read-more {
+		font-size: 0.85rem;
+		margin-top: 5px;
+		padding: 0.3em 0.75em;
+		display: block;
+		border-radius: 3px;
+		border: 1px solid #333;
+		width: fit-content;
+		&::after {
+			content: '\f061';
+			font-family: 'Font Awesome 6 Free';
+			font-weight: 900;
+			margin-left: 5px;
+		}
+	}
+
 	@media (hover) {
+		// Hover effect for Read more button
+		.read-more {
+			grid-area: 1 / 1 / 2 / 2;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			padding: 0.25em 0.75em;
+			border-radius: 2px;
+			border: 1px solid #f0f0f0;
+			background-color: transparent;
+			color: #f8f8f8;
+			opacity: 0;
+			cursor: pointer;
+			transition: opacity 200ms linear;
+		}
+
 		.project-item:hover {
 			transform: scale(1.05);
 
-			.learn-more {
+			.read-more {
 				opacity: 1;
 			}
 
