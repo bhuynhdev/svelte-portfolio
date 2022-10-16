@@ -8,3 +8,5 @@ export const load = ({ url }) => {
     currentRoute
   }
 }
+
+export const prerender = true;
