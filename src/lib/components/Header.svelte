@@ -1,4 +1,16 @@
-<header>
+<script>
+	import { onMount } from 'svelte';
+
+	let isHeaderScrolled = false;
+
+	onMount(() => {
+		document.onscroll = () => {
+			isHeaderScrolled = document.documentElement.scrollTop >= 50;
+		};
+	});
+</script>
+
+<header class:header-scrolled={isHeaderScrolled}>
 	<a href="/">BHUYNH.ME</a>
 	<input type="checkbox" id="nav-toggle" class="toggle" />
 	<label for="nav-toggle" class="burger">
@@ -42,6 +54,11 @@
 		a:focus {
 			color: #000;
 		}
+	}
+
+	.header-scrolled {
+		background-color: #f9f9f9;
+		box-shadow: 0px 1.5px 8px rgba(#111, 0.15);
 	}
 
 	nav {
