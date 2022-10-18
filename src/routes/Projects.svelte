@@ -45,7 +45,7 @@
 				</div>
 				<div class="info">
 					<div class="headline">
-						<h3 class="name">{project.name}</h3>
+						<h3 class="name"><a href={`/blog/${project.blogpost}`}>{project.name}</a></h3>
 						<span class="separator">|</span>
 						<div class="links">
 							{#if project.github}
