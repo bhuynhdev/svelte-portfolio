@@ -18,7 +18,7 @@
 				alt: 'Calendar on the wall with text Timeblocker Calendar plus Todolist'
 			},
 			github: 'https://github.com/bhuynhdev/Habitica-Calendia',
-			site: 'http://timeblock-calendar.herokuapp.com/',
+			site: 'https://timeblock-calendar.up.railway.app/',
 			skills: ['JavaScript', 'React', 'MongoDB', 'Express.js'],
 			blogpost: 'project-todo-calendar'
 		},
