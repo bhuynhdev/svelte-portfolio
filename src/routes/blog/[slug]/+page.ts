@@ -12,15 +12,15 @@ export type MdPostDynamicImport = {
 };
 
 export type MdPostLoadedData = {
-	title: MdPostDynamicImport['metadata']['title'];
-	date: MdPostDynamicImport['metadata']['date'];
+	title: string;
+	date: string;
 	content: MdPostDynamicImport['default'];
 };
 
 export const load: PageLoad<MdPostLoadedData> = async ({ params }) => {
 	try {
 		const post: MdPostDynamicImport = await import(`../${params.slug}.mdx`);
-		const { title = 'Blog post title', date } = post.metadata;
+		const { title = 'Blog post title', date = 'January 01, 2022' } = post.metadata;
 		const content = post.default;
 
 		return {
