@@ -172,7 +172,7 @@
 					bottom: -2.5px;
 					width: 100%;
 					height: 2px;
-					background-color: #0f0f0f;
+					background-color: currentColor;
 					transform: scaleX(0%);
 					transform-origin: left;
 					transition: transform 300ms ease;
