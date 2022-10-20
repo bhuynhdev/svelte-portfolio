@@ -8,7 +8,8 @@
 				alt: 'Lego car'
 			},
 			github: 'https://github.com/bhuynhdev/ENED-1120-Robotics-Proj5',
-			skills: ['Python', 'Matplotlib']
+			skills: ['Python', 'Matplotlib'],
+			blogpost: 'project-ened-robot'
 		},
 		{
 			name: 'Todo calendar',
