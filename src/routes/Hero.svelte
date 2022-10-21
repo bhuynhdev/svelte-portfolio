@@ -65,6 +65,10 @@
 				margin-bottom: 0.75em;
 			}
 		}
+
+		> * {
+			margin-top: 3rem;
+		}
 	}
 
 	.highlight {
@@ -118,6 +122,7 @@
 		font-size: 2.25em;
 		justify-content: center;
 		align-items: center;
+		margin-bottom: 0;
 	}
 
 	@media (hover) {

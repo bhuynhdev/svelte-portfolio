@@ -19,7 +19,7 @@
 	<nav>
 		<ul>
 			<li class="nav-item">
-				<a href="/#about">About me</a>
+				<a href="/#about">About</a>
 			</li>
 			<li class="nav-item">
 				<a href="/#experience">Experiences</a>
@@ -77,8 +77,7 @@
 			flex-direction: column;
 			text-align: right;
 			gap: 0.7em;
-			text-transform: uppercase;
-			font-weight: 600;
+			font-weight: 500;
 			letter-spacing: 0.5px;
 			a {
 				opacity: 0;
@@ -139,7 +138,7 @@
 	@media screen and (min-width: 70em) {
 		header {
 			// Expand header padding a bit on desktop
-			padding: 0.85rem var(--space-x);
+			padding: 1.35vw var(--space-x);
 		}
 
 		.burger {
@@ -151,7 +150,7 @@
 			ul {
 				padding: 0;
 				flex-direction: row;
-				gap: 1em;
+				gap: 2vw;
 				justify-content: flex-end;
 				align-items: center;
 				a {
