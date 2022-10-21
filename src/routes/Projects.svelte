@@ -46,7 +46,15 @@
 				</div>
 				<div class="info">
 					<div class="headline">
-						<h3 class="name"><a href={`/blog/${project.blogpost}`}>{project.name}</a></h3>
+						<h3 class="name">
+							{#if project.blogpost}
+								<!-- Anchor tag if blog link exists -->
+								<a href={`/blog/${project.blogpost}`}>{project.name}</a>
+							{:else}
+								<!-- Else just project name -->
+								{project.name}
+							{/if}
+						</h3>
 						<span class="separator">|</span>
 						<div class="links">
 							{#if project.github}
