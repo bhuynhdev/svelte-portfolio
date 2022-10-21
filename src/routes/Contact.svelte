@@ -1,7 +1,7 @@
 <section class="contact" id="contact">
 	<div class="text">
 		<header>
-			<h2 id="contact" class="title">Leave me a message</h2>
+			<h2 id="contact-heading" class="title">Leave me a message</h2>
 			<p>I am always up for a good conversation</p>
 		</header>
 		<h3 class="subtitle">Contact information</h3>
