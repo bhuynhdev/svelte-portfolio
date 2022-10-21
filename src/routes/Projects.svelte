@@ -58,12 +58,12 @@
 						<span class="separator">|</span>
 						<div class="links">
 							{#if project.github}
-								<a href="https://github.com/bhuynhdev/ENED-1120-Robotics-Proj5"
+								<a href={project.github} target="_blank" rel="noopener noreferrer"
 									><i class="fa-brands fa-github" aria-label="Repository" /></a
 								>
 							{/if}
 							{#if project.site}
-								<a href="http://timeblock-calendar.herokuapp.com/"
+								<a href={project.site} target="_blank" rel="noopener noreferrer"
 									><i class="fa-solid fa-link" aria-label="Live site" /></a
 								>
 							{/if}
