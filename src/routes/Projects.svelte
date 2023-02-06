@@ -162,7 +162,7 @@
 		border: 1px solid #333;
 		width: fit-content;
 		&::after {
-			content: '\f061';
+			content: '\f178';
 			font-family: 'Font Awesome 6 Free';
 			font-weight: 900;
 			margin-left: 5px;

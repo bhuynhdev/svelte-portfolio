@@ -49,7 +49,10 @@ const config = {
 	extensions: ['.svelte', '.mdx'],
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		prerender: {
+			handleMissingId: 'warn'
+		}
 	}
 };
 
