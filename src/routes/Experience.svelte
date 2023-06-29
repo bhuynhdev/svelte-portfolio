@@ -60,7 +60,7 @@
 					<h3>
 						{experience.title}
 						<span class="company-highlight"
-							>@ <a href={experience.companyLink} target="_blank" rel="noopenner rereferrer"
+							>@ <a href={experience.companyLink} target="_blank" rel="noopenner noreferrer"
 								>{experience.company}</a
 							></span
 						>

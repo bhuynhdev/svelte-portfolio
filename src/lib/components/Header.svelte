@@ -11,7 +11,7 @@
 </script>
 
 <header class:header-scrolled={isHeaderScrolled}>
-	<a href="/">BHUYNH.ME</a>
+	<a href="/">BHUYNH.DEV</a>
 	<input type="checkbox" id="nav-toggle" class="toggle" />
 	<label for="nav-toggle" class="burger">
 		<span />

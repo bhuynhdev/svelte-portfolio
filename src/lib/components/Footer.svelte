@@ -39,7 +39,7 @@
 			</li>
 		</ul>
 	</div>
-	<p>© 2022 Bao Huynh</p>
+	<p>© 2023 Bao Huynh</p>
 </footer>
 
 <style lang="scss">
