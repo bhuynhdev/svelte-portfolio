@@ -28,7 +28,7 @@
 				>Resume <img src="/icons/arrow-right.svg" alt="Arrow icon" class="arrow" /></span
 			>
 		</a> -->
-		<a href="/resume.pdf" class="resume-button" target="_blank"
+		<a href="/BaoHuynh_resume_2023.pdf" class="resume-button" target="_blank"
 			><span class="download-text">Download resume</span>
 			<i class="fa fa-arrow-right arrow" aria-hidden="true" /></a
 		>

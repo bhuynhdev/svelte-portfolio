@@ -8,10 +8,10 @@
 		<div class="skill-category">
 			<div class="headline">
 				<h3>Frontend</h3>
-				<p>Crafting smooth frontend</p>
+				<p>Crafting user-friendly interfaces</p>
 			</div>
 			<ul class="list">
-				{#each ['React', 'Angular', 'JavaScript', 'Typescript', 'HTML', 'SASS', 'Nextjs', 'TailwindCSS'] as skill}
+				{#each ['React', 'Angular', 'Remix', 'Nextjs', 'JavaScript', 'Typescript', 'HTML', 'SASS', 'TailwindCSS'] as skill}
 					<li class="skill-item">
 						<SkillIcon iconName={skill} size={40} />
 					</li>
@@ -21,10 +21,10 @@
 		<div class="skill-category">
 			<div class="headline">
 				<h3>Backend</h3>
-				<p>Creating scaleable backend</p>
+				<p>Creating scaleable systems</p>
 			</div>
 			<ul class="list">
-				{#each ['Nodejs', 'Express', 'NestJS', 'MongoDB', 'MySQL', 'Python', 'FastAPI', 'Flask'] as skill}
+				{#each ['Nodejs', 'Express', 'NestJS', 'Fastify', 'MongoDB', 'MySQL', 'Python', 'FastAPI', 'Flask'] as skill}
 					<li class="skill-item">
 						<SkillIcon iconName={skill} size={40} />
 					</li>
@@ -34,10 +34,10 @@
 		<div class="skill-category">
 			<div class="headline">
 				<h3>Developer tools</h3>
-				<p>Use the right tool</p>
+				<p>Boosting productivity with the right tool</p>
 			</div>
 			<ul class="list">
-				{#each ['Azure', 'Git', 'Github', 'Heroku', 'Jest', 'VsCode'] as skill}
+				{#each ['Azure', 'Git', 'Github', 'Gitlab', 'Jest', 'VsCode'] as skill}
 					<li class="skill-item">
 						<SkillIcon iconName={skill} size={40} />
 					</li>
